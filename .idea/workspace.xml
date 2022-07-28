@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="gryffind_dev" targetName="gryffind_dev" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -16,16 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d0186d35-86bf-404b-8949-ccffa4f66aed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Viewer2/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Viewer2/mainwindow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Viewer2/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Viewer2/mainwindow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Viewer2/mainwindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Viewer2/mainwindow.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Viewer2/widget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Viewer2/widget.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Viewer2/widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Viewer2/widget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-Viewer2-Desktop_x86_darwin_generic_mach_o_64bit-Debug/.qtc_clangd/.cache/clangd/index/parsing.c.934080F0DEFC88A9.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build-Viewer2-Desktop_x86_darwin_generic_mach_o_64bit-Debug/.qtc_clangd/.cache/clangd/index/parsing.c.934080F0DEFC88A9.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-Viewer2-Desktop_x86_darwin_generic_mach_o_64bit-Debug/.qtc_clangd/.cache/clangd/index/parsing.h.718B9129688130C3.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build-Viewer2-Desktop_x86_darwin_generic_mach_o_64bit-Debug/.qtc_clangd/.cache/clangd/index/parsing.h.718B9129688130C3.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-Viewer2-Desktop_x86_darwin_generic_mach_o_64bit-Debug/.qtc_clangd/.cache/clangd/index/stdbool.h.C1E153A56F3BC147.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build-Viewer2-Desktop_x86_darwin_generic_mach_o_64bit-Debug/.qtc_clangd/.cache/clangd/index/stdbool.h.C1E153A56F3BC147.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-Viewer2-Desktop_x86_darwin_generic_mach_o_64bit-Debug/.qtc_clangd/.cache/clangd/index/stdint.h.36C0C2E5C3DB6275.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build-Viewer2-Desktop_x86_darwin_generic_mach_o_64bit-Debug/.qtc_clangd/.cache/clangd/index/stdint.h.36C0C2E5C3DB6275.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gryffind_dev/parsing.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/gryffind_dev/parsing.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +23,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -68,7 +55,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -83,26 +70,17 @@
       <command value="gs" />
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.gryffind_dev">
-    <configuration name="C8_3DViewer_v1_0_0" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="gryffind_dev" TARGET_NAME="C8_3DViewer_v1_0_0" RUN_TARGET_PROJECT_NAME="gryffind_dev" RUN_TARGET_NAME="C8_3DViewer_v1_0_0">
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C8_3DViewer_v1_0_0" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="C8_3DViewer_v1_0_0" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="C8_3DViewer_v1_0_0">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gryffind_dev" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="gryffind_dev" TARGET_NAME="gryffind_dev" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="gryffind_dev" RUN_TARGET_NAME="gryffind_dev">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.C8_3DViewer_v1_0_0" />
-      <item itemvalue="CMake Application.gryffind_dev" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -115,6 +93,7 @@
       <workItem from="1658512962475" duration="1636000" />
       <workItem from="1658516153045" duration="1606000" />
       <workItem from="1658662465512" duration="966000" />
+      <workItem from="1658858685954" duration="147000" />
     </task>
     <servers />
   </component>

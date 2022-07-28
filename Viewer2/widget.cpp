@@ -71,7 +71,7 @@ void Widget::filler_first() {
   char* filename = new char[path_to_file.length()];
   QByteArray barr = path_to_file.toLatin1();
   strlcpy(filename, barr, path_to_file.length() + 1);
-qDebug() << filename << "aaaaaaaaaa";
+//qDebug() << filename << "aaaaaaaaaa";
 fiename_global = filename;
 //     username[40] = system("whoami");
 //    char filename[100] = "/Users/corkiudy/C8_3DViewer_v1.0-0/src/gryffind_dev/obj/deparse.obj";

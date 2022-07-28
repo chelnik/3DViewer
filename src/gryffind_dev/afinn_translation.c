@@ -3,27 +3,27 @@
 //
 
 #include "afinn_translation.h"
-#include "parsing.h"
-#include "math.h"
 
+#include "math.h"
+#include "parsing.h"
 
 void change_of_size(Data *obj, double coefficient) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t result;
     s21_mult_number(&tmp, coefficient, &result);
     (*obj).matrix = result;
-//    s21_remove_matrix(&result);  // не чистится память???
+    //    s21_remove_matrix(&result);  // не чистится память???
 }
 
 void change_of_size_x(Data *obj, double coefficient) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t result;
     s21_create_matrix(obj->count_of_vertex, 3, &result);
     for (int i = 0; i < obj->count_of_vertex; i++) {
         for (int j = 0; j < 3; j++) {
-            result.matrix[i][0] = obj->matrix.matrix[i][0]*coefficient;
+            result.matrix[i][0] = obj->matrix.matrix[i][0] * coefficient;
             result.matrix[i][1] = obj->matrix.matrix[i][1];
             result.matrix[i][2] = obj->matrix.matrix[i][2];
         }
@@ -32,12 +32,12 @@ void change_of_size_x(Data *obj, double coefficient) {
 }
 void change_of_size_y(Data *obj, double coefficient) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t result;
     s21_create_matrix(obj->count_of_vertex, 3, &result);
     for (int i = 0; i < obj->count_of_vertex; i++) {
         for (int j = 0; j < 3; j++) {
-            result.matrix[i][1] = obj->matrix.matrix[i][1]*coefficient;
+            result.matrix[i][1] = obj->matrix.matrix[i][1] * coefficient;
             result.matrix[i][0] = obj->matrix.matrix[i][0];
             result.matrix[i][2] = obj->matrix.matrix[i][2];
         }
@@ -47,12 +47,12 @@ void change_of_size_y(Data *obj, double coefficient) {
 
 void change_of_size_z(Data *obj, double coefficient) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t result;
     s21_create_matrix(obj->count_of_vertex, 3, &result);
     for (int i = 0; i < obj->count_of_vertex; i++) {
         for (int j = 0; j < 3; j++) {
-            result.matrix[i][2] = obj->matrix.matrix[i][2]*coefficient;
+            result.matrix[i][2] = obj->matrix.matrix[i][2] * coefficient;
             result.matrix[i][1] = obj->matrix.matrix[i][1];
             result.matrix[i][0] = obj->matrix.matrix[i][0];
         }
@@ -62,7 +62,7 @@ void change_of_size_z(Data *obj, double coefficient) {
 
 void move_x(Data *obj, double constant) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t result;
     s21_create_matrix(obj->count_of_vertex, 3, &result);
     for (int i = 0; i < obj->count_of_vertex; i++) {
@@ -76,7 +76,7 @@ void move_x(Data *obj, double constant) {
 }
 void move_y(Data *obj, double constant) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t result;
     s21_create_matrix(obj->count_of_vertex, 3, &result);
     for (int i = 0; i < obj->count_of_vertex; i++) {
@@ -91,7 +91,7 @@ void move_y(Data *obj, double constant) {
 
 void move_z(Data *obj, double constant) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t result;
     s21_create_matrix(obj->count_of_vertex, 3, &result);
     for (int i = 0; i < obj->count_of_vertex; i++) {
@@ -106,7 +106,7 @@ void move_z(Data *obj, double constant) {
 
 void turn_x(Data *obj, double corner) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t turn_matrix;
     s21_create_matrix(3, 3, &turn_matrix);
     turn_matrix.matrix[0][0] = 1;
@@ -126,12 +126,13 @@ void turn_x(Data *obj, double corner) {
 
 void turn_y(Data *obj, double corner) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t turn_matrix;
     s21_create_matrix(3, 3, &turn_matrix);
     turn_matrix.matrix[0][0] = cos(corner);
     turn_matrix.matrix[0][1] = 0;
-    turn_matrix.matrix[0][2] = -sin(corner);;
+    turn_matrix.matrix[0][2] = -sin(corner);
+    ;
     turn_matrix.matrix[1][0] = 0;
     turn_matrix.matrix[1][1] = 1;
     turn_matrix.matrix[1][2] = 0;
@@ -145,7 +146,7 @@ void turn_y(Data *obj, double corner) {
 }
 void turn_z(Data *obj, double corner) {
     matrix_t tmp;
-    tmp  = (*obj).matrix;
+    tmp = (*obj).matrix;
     matrix_t turn_matrix;
     s21_create_matrix(3, 3, &turn_matrix);
     turn_matrix.matrix[0][0] = cos(corner);
